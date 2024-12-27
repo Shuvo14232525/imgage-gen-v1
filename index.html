@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVO Image Gen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <h1>SVO Image Gen</h1>
+        <p>Convert words into images instantly with AI. Describe your imagination, and we'll create it for you.</p>
+        <div class="input-container">
+            <textarea id="prompt" placeholder="Enter your prompt here..."></textarea>
+            <div class="options">
+                <label>
+                    <input type="radio" name="imageCount" value="1" checked>
+                    Generate 1 Image
+                </label>
+                <label>
+                    <input type="radio" name="imageCount" value="2">
+                    Generate 2 Images
+                </label>
+            </div>
+            <button id="generateBtn" class="btn">Generate</button>
+        </div>
+        <div id="output" class="gallery"></div>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <p>Your prompt is invalid or contains adult content.</p>
+            <button id="closePopup" class="btn">Close</button>
+        </div>
+    </div>
+    <div id="subscribePopup" class="popup">
+        <div class="popup-content">
+            <h2>Subscribe to our Newsletter</h2>
+            <p>To be updated with the latest AI-generated tools and tips!</p>
+            <input type="text" id="nameInput" placeholder="Your Name">
+            <input type="email" id="emailInput" placeholder="Your Email">
+            <div class="popup-actions">
+                <label>
+                    <input type="checkbox" id="agreePolicy"> I agree with the Privacy Policy
+                </label>
+                <button id="subscribeBtn" class="btn">Subscribe</button>
+                <button id="closeSubscribePopup" class="btn btn-secondary">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <div id="successPopup" class="popup">
+        <div class="popup-content">
+            <p>Thank you for subscribing!</p>
+            <button id="closeSuccess" class="btn">Close</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

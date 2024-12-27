@@ -1,0 +1,144 @@
+/* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', serif;
+  color: #333;
+  background: url('https://i.ibb.co.com/sqr7m6p/pexels-bri-schneiter-28802-346529-min.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.hero {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #d35400;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.input-container {
+  margin: 20px auto;
+  width: 80%;
+  max-width: 600px;
+}
+
+textarea {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.options {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #d35400;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #e67e22;
+}
+
+.btn-secondary {
+  background-color: #bdc3c7;
+  color: #333;
+}
+
+.btn-secondary:hover {
+  background-color: #95a5a6;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.gallery .container {
+  text-align: center;
+}
+
+.gallery img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: black;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 90%;
+}
+
+.popup-content h2 {
+  margin-bottom: 10px;
+  color: #d35400;
+}
+
+.popup-content input {
+  width: calc(100% - 20px);
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.popup-actions {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popup-actions label {
+  font-size: 0.8rem;
+}
